@@ -4,10 +4,10 @@
 
 ### Author: CK 2021-Jul-2021  
 ## Objective
-To write out the teleprompt script that the continuity announcer reads during the credits of each program (yezz, good ol' days!). The script should tell the viewer which program is finishing and what time it is finishing, which show is about to be played and which show is on after that.
+To write out the teleprompt script that the continuity announcer reads during the credits of each program (just like good ol' days!). The script should tell the viewer which program is finishing and what time it is finishing, which show is about to be played and which show is on after that.
 
 ## Background
-This program is written in Python 3.7 environment. File name: test.py. Python libraries used: datetime, numpy, pandas, and sys
+This program is written in Python 3.7 environment. File name: run.py. Python libraries used: datetime, numpy, pandas, and sys
 
 ## What you should pass to the program (inputs)
 1.   CSV (**C**omma **S**eparated **V**alues) file containing the TV guide. This is a mandatory input. If the data in the file is not valid then teleprompt script will not be generated. Mandatory fields in the file are:
@@ -24,8 +24,20 @@ Snippet of a sample file is shown below...
 
 2.   Date and Time in ISO 8601 format e.g. 2021-06-20T05:37:22+10:00. This is optional. However, if not provided machine's local datetime will be used
 
-## What to expect as output from the program
-The program will scan the CSV file and extract the TV program that's running at the date time specified as input or machine local time(if date time not provided). Then determine the next the programs to follow. Details output are:
+## What to expect as output
+The program will scan the CSV file and extract the TV program that's running at the date time specified as input or machine local time(if date time not provided). Then determine the next the programs to follow. Output details are:
 * Title and Ending time of the TV program running at the date and time specified
 * Title and Rating of the next program to follow
 * Title of the program to follow the next program
+
+e.g. *That was Game of Thrones ending at 20/06/2021 06:20, up next is Westworld which is rated MA15+ and coming up later is Succession.*
+
+
+## How to use the program
+Run the program *run.py* as shown below:
+
+````python 
+>>>python run.py test.csv 2021-06-20T05:37:22+10:00
+That was Game of Thrones ending at 20/06/2021 06:20, up next is Westworld which is rated MA15+ and 
+coming up later is Succession.
+````
