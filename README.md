@@ -45,7 +45,9 @@ coming up later is Succession.
 ````
 ## Common Pitfalls
 Here are some errors that might occur
-1. CSV file is not 
+1. CSV file is not in the specified location or fullpath is not provided
+2. Data formats in the CSV file are incorrect espcially start date and time
+3. Data and time provided are outside of the TV guide (CSV file) 
 
 ## Future improvements
 More data validation for CSV file can be implemented: 
