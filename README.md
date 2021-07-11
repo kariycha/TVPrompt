@@ -41,8 +41,8 @@ Run the program *run.py* as shown below:
 
 ````python 
 >>>python run.py test.csv 2021-06-20T05:37:22+10:00
-That was Game of Thrones ending at 20/06/2021 06:20, up next is Westworld which is rated MA15+ and 
-coming up later is Succession.
+That was Game of Thrones ending at 20/06/2021 06:20, up next is Westworld which is 
+rated MA15+ and coming up later is Succession.
 ````
 ## Common Pitfalls
 Here are some errors that might occur
