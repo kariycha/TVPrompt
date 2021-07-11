@@ -1,15 +1,12 @@
 <h2 align="center">Channel 8, the local community TV station</h1>
 
 # Teleprompt Script for the Continuity Announcer <img align="right" width="200" height="300" src="https://github.com/kariycha/TVPrompt/blob/main/TelePrompter2.png">
-
 ### Author: CK    
 2021-Jul-2021  
 ## Objective
 To write the teleprompt script that the continuity announcer reads during the credits of each program (just like good ol' days!). The script should tell the viewer which program is finishing and what time it is finishing, which show is about to be played and which show is on after that.
-
 ## Background
 This program is written in Python 3.7 environment. File name: run.py. Python libraries used: datetime, numpy, pandas, and sys
-
 ## What you should pass to the program (inputs)
 1.   CSV (**C**omma **S**eparated **V**alues) file containing the TV guide. This is a mandatory input. If the data in the file is not valid then the teleprompt script will not be generated. Required fields in the file are:
   * title - Text format
@@ -27,7 +24,6 @@ Snippet of a sample file is shown below...
 </p>
 
 2.   Date and Time, in ISO 8601 format e.g. 2021-06-20T05:37:22+10:00. This is optional. However, if not provided machine's local datetime will be used
-
 ## What to expect as output
 The program will scan the CSV file and extract the TV program that's running at the date time specified as input or machine local time(if date time not provided). Then determine the next the programs to follow. Output details are:
 * Title and Ending time of the TV program running at the date and time specified
@@ -35,7 +31,6 @@ The program will scan the CSV file and extract the TV program that's running at 
 * Title of the program to follow the next program
 
 e.g. *That was Game of Thrones ending at 20/06/2021 06:20, up next is Westworld which is rated MA15+ and coming up later is Succession.*
-
 ## How to use the program
 Run the program *run.py* as shown below:
 
@@ -50,7 +45,6 @@ Here are some errors that might occur
 2. Data formats in the CSV file are incorrect espcially start date and time
 3. Date and time provided are outside of the TV guide (CSV file) 
 4. Date and time provided not in the ISO 8601 format
-
 ## Future improvements
 More data validations for CSV file can be implemented: 
    * Checking date and time are in correct format
