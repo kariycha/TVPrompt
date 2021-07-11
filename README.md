@@ -16,7 +16,10 @@ This program is written in Python 3.7 environment. File name: run.py. Python lib
   * utc_start_time - Time format HH:MM e.g. 03:24
   * running_time   - Integer format, duration in seconds e.g. 3600
   
-     Note: "rating" column can be empty, however in the teleprompt it will say "rating is not available" 
+     Notes: 
+     * "rating" column can be empty, however in the teleprompt it will say "rating is not available" 
+     * If the CSV file is in a different location, full path to the file must be provided e.g. *D:\Data\Python\TVPrompt\example.csv* 
+
 Snippet of a sample file is shown below...
 <p align="center">
   <img width="600" height="500" src="https://github.com/kariycha/TVPrompt/blob/main/CVSFile.PNG">
@@ -32,7 +35,6 @@ The program will scan the CSV file and extract the TV program that's running at 
 
 e.g. *That was Game of Thrones ending at 20/06/2021 06:20, up next is Westworld which is rated MA15+ and coming up later is Succession.*
 
-
 ## How to use the program
 Run the program *run.py* as shown below:
 
@@ -41,3 +43,12 @@ Run the program *run.py* as shown below:
 That was Game of Thrones ending at 20/06/2021 06:20, up next is Westworld which is rated MA15+ and 
 coming up later is Succession.
 ````
+## Common Pitfalls
+Here are some errors that might occur
+1. CSV file is not 
+
+## Future improvements
+More data validation for CSV file can be implemented: 
+   * Checking date and time are in correct format
+   * How to handle if there are multiple entries for the same timeslot
+
