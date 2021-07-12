@@ -12,8 +12,7 @@ This program is written in Python 3.7 environment. File name: run.py. Standard P
   * title - Text format
   * utc_start_date - Date format dd/mm/yyyy e.g. 07/07/2021
   * utc_start_time - Time format HH:MM e.g. 03:24
-  * running_time   - Integer format, duration in seconds e.g. 3600
-  
+  * running_time   - Integer format, duration in seconds e.g. 3600  
      Notes: 
      * "rating" column can be empty, however in the teleprompt it will say "rating is not available" 
      * If the CSV file is in a different location, full path to the file must be provided e.g. *D:\Data\Python\TVPrompt\example.csv* 
@@ -28,16 +27,13 @@ Snippet of a sample file is shown below...
 The program will scan the CSV file and extract the TV program that's running at the date time specified as input or machine local time(if date time not provided). Then determine the next the programs to follow. Output details are:
 * Title and Ending time of the TV program running at the date and time specified
 * Title and Rating of the next program to follow
-* Title of the program to follow the next program\
-
+* Title of the program to follow the next program</br>
 e.g. *That was Game of Thrones ending at 20/06/2021 06:20, up next is Westworld which is rated MA15+ and coming up later is Succession.*
 
 when no program details are available:\
 e.g. *No program details available for 2021-06-19T15:27:30+10:00.*
-
 ## How to use the program
 Run the program *run.py* as shown below:
-
 ````python 
 >>>python run.py test.csv 2021-06-20T05:37:22+10:00
 That was Game of Thrones ending at 20/06/2021 06:20, up next is Westworld which is 
