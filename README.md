@@ -6,7 +6,7 @@
 ## Objective
 To write the teleprompt script that the continuity announcer reads during the credits of each program (just like good ol' days!). The script should tell the viewer which program is finishing and what time it is finishing, which show is about to be played and which show is on after that.
 ## Background
-This program is written in Python 3.7 environment. File name: run.py. Python libraries used: datetime, numpy, pandas, and sys
+This program is written in Python 3.7 environment. File name: run.py. Standard Python libraries used: datetime and sys
 ## What you should pass to the program (inputs)
 1.   CSV (**C**omma **S**eparated **V**alues) file containing the TV guide. This is a mandatory input. If the data in the file is not valid then the teleprompt script will not be generated. Required fields in the file are:
   * title - Text format
@@ -20,7 +20,7 @@ This program is written in Python 3.7 environment. File name: run.py. Python lib
 
 Snippet of a sample file is shown below...
 <p align="center">
-  <img width="600" height="500" src="https://github.com/kariycha/TVPrompt/blob/main/CVSFile.PNG">
+  <img width="500" height="400" src="https://github.com/kariycha/TVPrompt/blob/main/CVSFile.PNG">
 </p>
 
 2.   Date and Time, in ISO 8601 format e.g. 2021-06-20T05:37:22+10:00. This is optional. However, if not provided machine's local datetime will be used
@@ -28,9 +28,13 @@ Snippet of a sample file is shown below...
 The program will scan the CSV file and extract the TV program that's running at the date time specified as input or machine local time(if date time not provided). Then determine the next the programs to follow. Output details are:
 * Title and Ending time of the TV program running at the date and time specified
 * Title and Rating of the next program to follow
-* Title of the program to follow the next program
+* Title of the program to follow the next program\
 
 e.g. *That was Game of Thrones ending at 20/06/2021 06:20, up next is Westworld which is rated MA15+ and coming up later is Succession.*
+
+when no program details are available:\
+e.g. *No program details available for 2021-06-19T15:27:30+10:00.*
+
 ## How to use the program
 Run the program *run.py* as shown below:
 
