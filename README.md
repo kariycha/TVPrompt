@@ -30,7 +30,8 @@ The program will scan the CSV file and extract the TV program that's running at 
 * Title of the program to follow the next program
 
 e.g. *That was Game of Thrones ending at 20/06/2021 06:20, up next is Westworld which is rated MA15+ and coming up later is Succession.*\
-when no program details are available:    e.g. *No program details available for 2021-06-19T15:27:30+10:00.*
+when no program details are available:    
+e.g. *No program details available for 2021-06-19T15:27:30+10:00.*
 ## How to use the program
 Run the program *run.py* as shown below:
 ````python 
