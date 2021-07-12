@@ -2,7 +2,7 @@
 
 # Teleprompt Script for the Continuity Announcer <img align="right" width="200" height="300" src="https://github.com/kariycha/TVPrompt/blob/main/TelePrompter2.png">
 ### Author: CK    
-2021-Jul-2021  
+2021-Jul-12  
 ## Objective
 To write the teleprompt script that the continuity announcer reads during the credits of each program (just like good ol' days!). The script should tell the viewer which program is finishing and what time it is finishing, which show is about to be played and which show is on after that.
 ## Background
